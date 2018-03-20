@@ -76,9 +76,10 @@
   !*** ./src/app.js ***!
   \********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/app.js?");
+"use strict";
+eval("\n\nvar a = \"TOTO\";\n\nconsole.log(a);\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ })
 
