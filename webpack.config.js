@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -39,5 +40,13 @@ module.exports = {
             }
 
         ]
-    }
+    },
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        historyApiFallback: true,
+        inline: true,
+        open: true,
+        hot: true
+    },
+    devtool: "eval-source-map"
 };
